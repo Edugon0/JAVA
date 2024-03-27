@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class Elevador
+{
+    public static void main (String[] args)
+    {
+        Scanner entrada = new Scanner(System.in);
+        
+        int andares
+        int capacidade
+        int presentes
+        int atual
+        int ultimo_andar
+        int total
+       
+        
+        System.out.print("Quantos andares tem o predio:");
+        andares = entrada.nextInt();
+        
+        System.out.print("O maximo de pessoas no elevador:");
+        capacidade = entrada.nextInt();
+        
+        System.out.print("Quantas pessoas tem no elevador no momento:");
+        presentes = presentes.nextInt();
+        
+        System.out.print("Qual é a andar atual do elevador:");
+        atual = entrada.nextInt();
+
+         total = andares - atual
+
+         System.out.println(" Quantos andares falta para chegar no terrio:"+ total)
+

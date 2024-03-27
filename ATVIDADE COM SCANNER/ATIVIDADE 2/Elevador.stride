@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class name="Elevador" enable="true" strideversion="1">
+    <javadoc xml:space="preserve"/>
+    <imports>
+        <import target="java.util.Scanner" enable="true"/>
+    </imports>
+    <implements/>
+    <fields/>
+    <constructors/>
+    <methods>
+        <method access="public" static="true" type="void" type-java="void" name="main" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params>
+                <params type="String[]" type-java="String[]" name="args"/>
+            </params>
+            <throws/>
+            <body>
+                <variable type="Scanner" type-java="Scanner" name="entrada" value="new Scanner(System.in)" value-java=" new Scanner(System.in)" enable="true"/>
+                <variable type="int" type-java="int" name="total" enable="true"/>
+                <variable type="int" type-java="int" name="capacidade" enable="true"/>
+                <variable type="int" type-java="int" name="presentes" enable="true"/>
+                <variable type="int" type-java="int" name="atual" enable="true"/>
+                <variable type="int" type-java="int" name="ultimo_andar" enable="true"/>
+                <variable type="int" type-java="int" name="resultado" enable="true"/>
+                <call expression="System.out.print(&quot;Quantos andares tem o predio:&quot;)" expression-java="System.out.print(&quot;Quantos andares tem o predio:&quot;)" enable="true"/>
+                <assign dest="total" dest-java="total" src="entrada.nextInt()" src-java="entrada.nextInt()" enable="true"/>
+                <call expression="System.out.print(&quot;O maximo de pessoas no elevador:&quot;)" expression-java="System.out.print(&quot;O maximo de pessoas no elevador:&quot;)" enable="true"/>
+                <assign dest="capacidade" dest-java="capacidade" src="entrada.nextInt()" src-java="entrada.nextInt()" enable="true"/>
+                <call expression="System.out.print(&quot;Quantas pessoas tem no elevador no momento:&quot;)" expression-java="System.out.print(&quot;Quantas pessoas tem no elevador no momento:&quot;)" enable="true"/>
+                <assign dest="presentes" dest-java="presentes" src="entrada.nextInt()" src-java="entrada.nextInt()" enable="true"/>
+                <call expression="System.out.print(&quot;Qual é a andar atual do elevador:&quot;)" expression-java="System.out.print(&quot;Qual é a andar atual do elevador:&quot;)" enable="true"/>
+                <assign dest="atual" dest-java="atual" src="entrada.nextInt()" src-java="entrada.nextInt()" enable="true"/>
+                <assign dest="resultado" dest-java="resultado" src="total-atual" src-java="total - atual" enable="true"/>
+                <call expression="System.out.println(&quot;Quantos andares falta para chegar no terrio:&quot;+resultado)" expression-java="System.out.println(&quot;Quantos andares falta para chegar no terrio:&quot; + resultado)" enable="true"/>
+            </body>
+        </method>
+    </methods>
+</class>

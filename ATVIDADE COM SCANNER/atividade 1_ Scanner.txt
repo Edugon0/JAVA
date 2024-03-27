@@ -1,0 +1,42 @@
+import java.util.Scanner;
+public class C_Bancaria
+{
+    public static void main (String[] args)
+    {
+        Scanner entrada = new Scanner(System.in);
+        
+        int agencia;
+        int CPF;
+        int saldo;
+        int porcentagem;
+        int media;
+        
+        
+        System.out.print("Digite o nome do Cliente:");
+        String nome = entrada.nextLine();
+        
+        System.out.print("Qual banco o cliente usa:");
+        
+        String banco = entrada.nextLine();
+        
+        System.out.print(" Digite a agencia do seu cliente:");
+        agencia = entrada.nextInt();
+        
+        System.out.print(" Digite o CPF do seu cliente:");
+        CPF = entrada.nextInt();
+        
+        System.out.print(" Digite O saldo do seu cliente:");
+        saldo = entrada.nextInt();
+        
+         porcentagem= (saldo * 15)/100;
+         media= saldo + porcentagem;
+        
+        
+        System.out.println("Nome:"+ nome);
+        System.out.println("Banco:"+ banco);
+        System.out.println("Agencia:"+ agencia);
+        System.out.println("CPF:"+ CPF);
+        System.out.println("Saldo:"+ saldo);
+        System.out.println("Valor do seu novo saldo(adicional de 15%):"+ media);
+    }
+}
